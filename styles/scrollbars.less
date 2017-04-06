@@ -1,17 +1,28 @@
 .scrollbars-visible-always {
   /deep/::-webkit-scrollbar {
-    width: 14px;
-    height: 14px;
-    z-index: 99999;
+    width: 8px !important;
+    height: 8px !important;
   }
   /deep/::-webkit-scrollbar-corner,
   /deep/::-webkit-scrollbar-track {
-    background: transparent;
+        //background-color: #000000;
+				-webkit-border-radius: 2em !important;
+				-moz-border-radius: 2em !important;
+				border-radius: 2em !important;
+				//border: 1px solid #000000;
+        filter:alpha(opacity=100) !important;
+
   }
   /deep/::-webkit-scrollbar-thumb {
-    background: fade(@seti-primary, 40%);
-    border-radius: 0;
-    border: none;
+    background-color: #353b45 !important;
+    //background: darken(@app-background-color, 2%);
+    //background-image: -webkit-gradient(linear,  40% 0%,  75% 84%,  from(#373b41),  to(#000000),  color-stop(.6, #bcc8c6));
+    -webkit-border-radius: 2em !important;
+    -moz-border-radius: 2em !important;
+    border-radius:2em !important;
+    //border:1px solid #ffffff;
+    //box-shadow: 2px 2px 2px 2px #888888;
+
   }
   &.panel-contrast {
     .nuclide-ui-panel-component-scroller,
